@@ -83,10 +83,10 @@ Below are some of the DAX formulas used to create the calculated columns and mea
 
 #### Google Sheets
 
+_Here is a screenshot from the Google Sheet that has the transactions data_
+
 ![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/b4010796-08b1-4188-a35f-65a9e8415c7f)
 
-
-_Include screenshots of the Google Sheets here._
 
 #### Power BI Dashboard
 
