@@ -90,7 +90,10 @@ _Here is a screenshot from the Google Sheet that has the transactions data_
 
 #### Power BI Dashboard
 
-_Include screenshots of the Power BI dashboard here._
+_Here is the screenshot from the [DRAFT] Power BI Dashboard_
+
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/708b6bbf-6010-4071-9ac5-269c85b229a8)
+
 
 ## Conclusion
 
@@ -99,5 +102,3 @@ This project demonstrates the effective use of Google Sheets, Python, and Power 
 ## Contact
 
 For any queries or further information, please contact me at zohaib8989@gmail.com
-
-Feel free to replace placeholders like `"path/to/your/credentials.json"` and `"Your Google Sheet Name"` with your actual file path and sheet name. Also, make sure to include the actual screenshots in the specified sections to give a complete view of your project.
