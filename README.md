@@ -79,6 +79,11 @@ Below are some of the DAX formulas used to create the calculated columns and mea
    Expense Breakdown = CALCULATE(SUM(Finance[Expenses]), ALLEXCEPT(Finance, Finance[Category]))
    ```
 
+### Here is the screenshot representing the organization of all the DAX Measures
+
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/26ef75c5-86e1-47b7-af62-2b81c504280c)
+
+
 ### Screenshots
 
 #### Google Sheets
