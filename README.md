@@ -7,9 +7,10 @@ This project aims to create a comprehensive personal finance dashboard using Goo
 ## Problem Statements
 
 1. **Data Consolidation**: Collecting and managing all personal finance transactions in a single, organized Google Sheet.
-2. **Data Integration**: Automating the process of fetching data from Google Sheets and integrating it with Power BI for visualization.
-3. **Visualization**: Creating interactive and insightful visualizations in Power BI to monitor income, expenses, savings, and investment trends.
-4. **Insights Generation**: Utilizing DAX formulas to generate meaningful insights from the data.
+2. **Multi-Currency**: Convert the data into PKR by fetching the daily conversion rate from the internet.
+3. **Data Integration**: Automating the process of fetching data from Google Sheets and integrating it with Power BI for visualization.
+4. **Visualization**: Creating interactive and insightful visualizations in Power BI to monitor income, expenses, savings, and investment trends.
+5. **Insights Generation**: Utilizing DAX formulas to generate meaningful insights from the data.
 
 ## Deliverables
 
