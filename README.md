@@ -129,7 +129,8 @@ _Here is the screenshot from the [DRAFT] Power BI Dashboard_
 
 ![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/708b6bbf-6010-4071-9ac5-269c85b229a8)
 
-![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/b1b0fae1-b2df-4ffe-9b05-c9f3605c2885)
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/60319095-f9a3-4be4-b92c-ad0a0ede4a4b)
+
 
 
 ## Conclusion
