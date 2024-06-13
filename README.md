@@ -95,7 +95,12 @@ Below are some of the DAX formulas used to create the calculated columns and mea
 
 3. **Net Savings**
    ```DAX
-   Net Savings = [Total Income] - [Total Expenses]
+   Total Spending = ABS(  // Calculate the absolute value of Total Spending
+    CALCULATE(
+        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Spending
+        CONTAINSSTRING(Transactions[Type], "Spending")  // Filter transactions where 'Type' contains the substring "Spending"
+    )
+)
    ```
 
 4. **Monthly Average Income**
