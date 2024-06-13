@@ -14,12 +14,13 @@ In this project, I used Google Sheets to store transactional data, linked to Pow
   - Converts all transactions into the home currency (PKR) for consistency.
   - Utilizes a dynamic dashboard with scheduled refreshes to offer real-time insights.
 
-## Deliverables
+### Deliverables
 
-1. **Google Sheets Setup**: A well-structured Google Sheet for logging personal finance transactions.
-2. **Python Script**: A Python script to link Google Sheets with Power BI.
-3. **Power BI Dashboard**: An interactive dashboard in Power BI showcasing various financial metrics.
-4. **DAX Formulas**: Custom DAX formulas to create calculated columns and measures for enhanced analysis.
+- **Integrated Data Platform:** Google Sheets integrated with Power BI via web connector for seamless data flow.
+- **Data Modeling:** Utilization of Power Query for cleaning and transforming raw transactional data.
+- **Currency Conversion:** Implementation of daily conversion rates to unify transactions into PKR.
+- **Dynamic Dashboard:** Creation of interactive charts and graphs in Power BI to visualize financial insights.
+- **Scheduled Refresh:** Setup of scheduled refresh feature to ensure the dashboard reflects real-time data updates.
 
 ## Python Code for Linking Google Sheets with Power BI
 
