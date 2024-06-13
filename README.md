@@ -22,6 +22,64 @@ In this project, I used Google Sheets to store transactional data, linked to Pow
 - **Dynamic Dashboard:** Creation of interactive charts and graphs in Power BI to visualize financial insights.
 - **Scheduled Refresh:** Setup of scheduled refresh feature to ensure the dashboard reflects real-time data updates.
 
+### Implementation Steps and Methodology
+
+This section provides a detailed walkthrough of the project implementation, highlighting each step with screenshots and explanations of DAX formulas and measures used:
+
+1. **Data Integration with Google Sheets and Power BI**
+   - Utilized the web connector in Power BI to establish a connection with Google Sheets.
+   - Screenshots demonstrating the setup and connection process.
+
+2. **Data Cleaning and Transformation**
+   - Applied Power Query to clean and transform raw transactional data from Google Sheets.
+   - Screenshots illustrating the data cleaning steps and transformations performed.
+
+3. **Data Modeling and Currency Conversion**
+   - Created date tables and implemented DAX formulas for data modeling.
+   - Utilized DAX formulas for:
+     - **Total Income:**
+       ```dax
+       Total Income = SUMX(Transactions, Transactions[Amount] * Transactions[ExchangeRate])
+       ```
+     - **YTD (Year-to-Date) Income:**
+       ```dax
+       YTD Income = CALCULATE([Total Income], DATESYTD('Date'[Date]))
+       ```
+     - **MTD (Month-to-Date) Income:**
+       ```dax
+       MTD Income = CALCULATE([Total Income], DATESMTD('Date'[Date]))
+       ```
+     - **Total Expenses:**
+       ```dax
+       Total Expenses = SUMX(Transactions, Transactions[Amount] * Transactions[ExchangeRate])
+       ```
+     - **YTD Expenses:**
+       ```dax
+       YTD Expenses = CALCULATE([Total Expenses], DATESYTD('Date'[Date]))
+       ```
+     - **MTD Expenses:**
+       ```dax
+       MTD Expenses = CALCULATE([Total Expenses], DATESMTD('Date'[Date]))
+       ```
+     - **Assets, Debt, Net Worth:**
+       Formulas to compute asset values, debt amounts, and overall net worth.
+     - **Cash Flow Analysis:**
+       Measures for cash inflow and outflow analysis.
+   - Screenshots showcasing DAX formulas used for currency conversion and financial calculations.
+
+4. **Dashboard Development**
+   - Designed an interactive dashboard in Power BI to visualize financial insights.
+   - Included screenshots of various charts, graphs, and KPIs created.
+
+5. **Scheduled Refresh and Real-time Updates**
+   - Configured scheduled refreshes in Power BI to ensure the dashboard reflects real-time data updates from Google Sheets.
+   - Screenshots demonstrating the setup of scheduled refreshes and their impact on dashboard accuracy.
+
+This section provides a comprehensive overview of the technical steps taken throughout the project, showcasing proficiency in data integration, modeling, visualization, and the strategic use of DAX formulas and measures for detailed financial analysis and reporting.
+
+
+
+
 ## Python Code for Linking Google Sheets with Power BI
 
 ```python
