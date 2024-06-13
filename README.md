@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to create a comprehensive personal finance dashboard using Google Sheets, Python, and Power BI. The goal is to visualize financial transactions to gain better insights into personal spending habits and financial health. This README file outlines the problem statements, deliverables, and technical details, including the Python code used to link Google Sheets with Power BI and the DAX formulas implemented to create the desired visualizations.
+In this project, I used Google Sheets to store transactional data, linked to Power BI via the web connector. Utilizing Power Query, I cleaned and transformed the data, then modeled it with various date tables. I took daily conversion rates to convert transactions into the home currency (PKR). Using DAX, I created custom KPIs and developed insightful charts and graphs in Power BI to visualize multi-currency transactions. The final dashboard employs the scheduled refresh feature, ensuring users always see the most up-to-date information. This summary is part of the README file in the GitHub repository, showcasing my skills in data integration, modeling, and visualization.
 
 ## Problem Statements
 
