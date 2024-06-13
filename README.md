@@ -4,13 +4,15 @@
 
 In this project, I used Google Sheets to store transactional data, linked to Power BI via the web connector. Utilizing Power Query, I cleaned and transformed the data, then modeled it with various date tables. I took daily conversion rates to convert transactions into the home currency (PKR). Using DAX, I created custom KPIs and developed insightful charts and graphs in Power BI to visualize multi-currency transactions. The final dashboard employs the scheduled refresh feature, ensuring users always see the most up-to-date information. This summary is part of the README file in the GitHub repository, showcasing my skills in data integration, modeling, and visualization.
 
-## Problem Statements
+### Problem Statement
 
-1. **Data Consolidation**: Collecting and managing all personal finance transactions in a single, organized Google Sheet.
-2. **Multi-Currency**: Convert the data into PKR by fetching the daily conversion rate from the internet.
-3. **Data Integration**: Automating the process of fetching data from Google Sheets and integrating it with Power BI for visualization.
-4. **Visualization**: Creating interactive and insightful visualizations in Power BI to monitor income, expenses, savings, and investment trends.
-5. **Insights Generation**: Utilizing DAX formulas to generate meaningful insights from the data.
+- **Challenge:** Managing personal finances is challenging, especially with transactions in multiple currencies.
+- **Data Issues:** Scattered data and complex currency conversion issues hinder clear and timely financial insights.
+- **Traditional Tools:** Traditional tools fall short in providing real-time, actionable information.
+- **Project Solution:**
+  - Integrates, models, and visualizes financial data from Google Sheets in Power BI.
+  - Converts all transactions into the home currency (PKR) for consistency.
+  - Utilizes a dynamic dashboard with scheduled refreshes to offer real-time insights.
 
 ## Deliverables
 
