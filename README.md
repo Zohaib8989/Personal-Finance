@@ -90,7 +90,11 @@ Below are some of the DAX formulas used to create the calculated columns and mea
 
 2. **Total Expenses**
    ```DAX
-   Total Expenses = SUM(Finance[Expenses])
+   Total Spending = ABS(  // Calculate the absolute value of Total Spending
+    CALCULATE(
+        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Spending
+        CONTAINSSTRING(Transactions[Type], "Spending")  // Filter transactions where 'Type' contains the substring "Spending"
+    ))
    ```
 
 3. **Net Savings**
@@ -99,8 +103,7 @@ Below are some of the DAX formulas used to create the calculated columns and mea
     CALCULATE(
         SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Spending
         CONTAINSSTRING(Transactions[Type], "Spending")  // Filter transactions where 'Type' contains the substring "Spending"
-    )
-)
+    ))
    ```
 
 4. **Monthly Average Income**
