@@ -103,55 +103,6 @@ Explore the interactive visualizations and insightful dashboards created in Powe
 
 These visualizations and dashboards are designed to provide clear and actionable insights into your financial data, facilitating informed decision-making and enhancing financial well-being.
 
-
-## Power BI Dashboard
-
-### DAX Formulas Used
-
-Below are some of the DAX formulas used to create the calculated columns and measures in the Power BI dashboard:
-
-1. **Total Income**
-   ```DAX
-   Total Income = 
-    CALCULATE(
-        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Income
-        CONTAINSSTRING(Transactions[Type], "Getting")  // Filter transactions where 'Type' contains the substring "Getting"
-    )
-   ```
-
-2. **Total Expenses**
-   ```DAX
-   Total Spending = ABS(  // Calculate the absolute value of Total Spending
-    CALCULATE(
-        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Spending
-        CONTAINSSTRING(Transactions[Type], "Spending")  // Filter transactions where 'Type' contains the substring "Spending"
-    ))
-   ```
-
-3. **Net Savings**
-   ```DAX
-   Total Spending = ABS(  // Calculate the absolute value of Total Spending
-    CALCULATE(
-        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Spending
-        CONTAINSSTRING(Transactions[Type], "Spending")  // Filter transactions where 'Type' contains the substring "Spending"
-    ))
-   ```
-
-4. **Monthly Average Income**
-   ```DAX
-   Monthly Average Income = AVERAGEX(SUMMARIZE(Finance, Finance[Month], "MonthlyIncome", [Total Income]), [MonthlyIncome])
-   ```
-
-5. **Monthly Average Expenses**
-   ```DAX
-   Monthly Average Expenses = AVERAGEX(SUMMARIZE(Finance, Finance[Month], "MonthlyExpenses", [Total Expenses]), [MonthlyExpenses])
-   ```
-
-6. **Expense Breakdown by Category**
-   ```DAX
-   Expense Breakdown = CALCULATE(SUM(Finance[Expenses]), ALLEXCEPT(Finance, Finance[Category]))
-   ```
-
 ### Here is the screenshot representing the organization of all the DAX Measures
 
 ![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/26ef75c5-86e1-47b7-af62-2b81c504280c)
