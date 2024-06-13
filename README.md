@@ -81,7 +81,11 @@ Below are some of the DAX formulas used to create the calculated columns and mea
 
 1. **Total Income**
    ```DAX
-   Total Income = SUM(Finance[Income])
+   Total Income = 
+    CALCULATE(
+        SUM(Transactions[Transaction Amount]),  // Calculate the sum of 'Transaction Amount' for Total Income
+        CONTAINSSTRING(Transactions[Type], "Getting")  // Filter transactions where 'Type' contains the substring "Getting"
+    )
    ```
 
 2. **Total Expenses**
