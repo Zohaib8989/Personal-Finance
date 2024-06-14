@@ -53,9 +53,17 @@ This section provides a detailed walkthrough of the project implementation, high
        ```dax
        Total Expenses = SUMX(Transactions, Transactions[Amount] * Transactions[ExchangeRate])
        ```
-     - **YTD Expenses:**
+     - **Account Balance Payoneer:**
        ```dax
-       YTD Expenses = CALCULATE([Total Expenses], DATESYTD('Date'[Date]))
+       Payoneer Balance = CALCULATE(CALCULATE(
+        SUM(Transactions[Wallet Amount]),  -- Calculate the sum of Wallet Amounts
+        FILTER(
+            Transactions,  -- Filter the Transactions table
+            Transactions[Account] = "Checking - Payoneer 9089"  -- Filter transactions where Account is "Checking - Payoneer 9089"
+        )), FILTER(
+        ALLSELECTED('Calendar'[Date]),  -- Consider all selected dates in the Calendar table
+        ISONORAFTER('Calendar'[Date], MAX('Calendar'[Date]), DESC)  -- Return dates equal to or after the latest selected date, descending))
+
        ```
      - **MTD Expenses:**
        ```dax
