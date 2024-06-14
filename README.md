@@ -55,15 +55,21 @@ This section provides a detailed walkthrough of the project implementation, high
        ```
      - **Account Balance Payoneer:**
        ```dax
-       Payoneer Balance = CALCULATE(CALCULATE(
+        Payoneer 9089 Balance = 
+        CALCULATE(
+        // To calculate the Net Amount of Checking - Payoneer 9089
+        CALCULATE(
         SUM(Transactions[Wallet Amount]),  -- Calculate the sum of Wallet Amounts
         FILTER(
             Transactions,  -- Filter the Transactions table
-            Transactions[Account] = "Checking - Payoneer 9089"
-        )), FILTER(
-        ALLSELECTED('Calendar'[Date]),
-        ISONORAFTER('Calendar'[Date], MAX('Calendar'[Date]), DESC)
-
+            Transactions[Account] = "Checking - Payoneer 9089"  -- Filter transactions where Account is "Checking - Payoneer 9089"
+        )
+        ),
+        // Apply additional filters based on date criteria
+        FILTER(
+        ALLSELECTED('Calendar'[Date]),  -- Consider all selected dates in the Calendar table
+        ISONORAFTER('Calendar'[Date], MAX('Calendar'[Date]), DESC)  -- Return dates equal to or after the latest selected date, descending
+        ))
        ```
      - **Converting USD Balance into PKR:**
        ```dax
