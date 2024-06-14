@@ -41,7 +41,7 @@ This section provides a detailed walkthrough of the project implementation, high
        ```dax
        Total Income = SUMX(Transactions, Transactions[Amount] * Transactions[ExchangeRate])
        ```
-     - **YTD (Year-to-Date) Income:**
+     - ***YTD (Year-to-Date) Income:***
        ```dax
        YTD Income = CALCULATE([Total Income], DATESYTD('Date'[Date]))
        ```
