@@ -121,9 +121,8 @@ _Here is a screenshot from the Google Sheet that has the transactions data_
 
 _Here is the screenshot from the [DRAFT] Power BI Dashboard_
 
-![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/708b6bbf-6010-4071-9ac5-269c85b229a8)
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/59a582a0-6425-4fd0-b78a-4438db73f1d6)
 
-![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/60319095-f9a3-4be4-b92c-ad0a0ede4a4b)
 
 
 ### Conclusion and Future Enhancements
