@@ -67,7 +67,17 @@ This section provides a detailed walkthrough of the project implementation, high
        ```
      - **MTD Expenses:**
        ```dax
-       MTD Expenses = CALCULATE([Total Expenses], DATESMTD('Date'[Date]))
+        Cum Balance USD in PKR = 
+            // Calculate USD Balance in PKR by applying exchange rate at the latest dateUSD Balance in PKR = 
+        CALCULATE(
+        [Cum Balance USD],  // Calculate the USD Balance measure
+        FILTER(
+            ALLSELECTED('Transactions'[Date]),  // Consider all selected dates in the 'Transactions' table
+            ISONORAFTER('Transactions'[Date], MAX('Transactions'[Date]), DESC)  // Filter dates that are on or after the maximum date in descending order
+        )
+        ) 
+        * LOOKUPVALUE('USD/PKR'[Close], 'USD/PKR'[Date], MAX(Transactions[Date]))  // Multiply by the USD to PKR exchange rate on the latest date
+
        ```
      - **Assets, Debt, Net Worth:**
        Formulas to compute asset values, debt amounts, and overall net worth.
