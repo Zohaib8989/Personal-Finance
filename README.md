@@ -43,7 +43,7 @@ This section provides a detailed walkthrough of the project implementation, high
        ```
      - **YTD (Year-to-Date) Income:**
        ```dax
-       YTD Income = CALCULATE(SUM(Transactions[Transaction Amount]), CONTAINSSTRING(Transactions[Type], "Getting"), DATESYTD(Transactions[Date]))
+       YTD Income = CALCULATE(SUM(Transactions[Transaction Amount]), FILTER(Transactions, Transactions[Type] = "Getting"), DATESYTD(Transactions[Date]))
        ```
      - **MTD (Month-to-Date) Income:**
        ```dax
