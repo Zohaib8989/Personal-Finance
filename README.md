@@ -79,10 +79,11 @@ This section provides a detailed walkthrough of the project implementation, high
         )
         ) 
         * LOOKUPVALUE('USD/PKR'[Close], 'USD/PKR'[Date], MAX(Transactions[Date]))  // Multiply by the USD to PKR exchange rate on the latest date
-
        ```
-     - **Assets, Debt, Net Worth:**
-       Formulas to compute asset values, debt amounts, and overall net worth.
+     - **Calculating Total Cash in hand in PKR Terms:**
+       ```dax
+        Cash in hand = [Cum Balance USD in PKR] + [Cum Balance PKR] + [Cum Bal AED in PKR]
+       ```
      - **Cash Flow Analysis:**
        Measures for cash inflow and outflow analysis.
    - Screenshots showcasing DAX formulas used for currency conversion and financial calculations.
