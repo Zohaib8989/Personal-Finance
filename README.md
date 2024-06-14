@@ -132,6 +132,13 @@ _Here is a screenshot from the Google Sheet that has the transactions data_
 ![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/b4010796-08b1-4188-a35f-65a9e8415c7f)
 
 
+#### Data Modelling
+
+_Here is a screenshot from the Data Modelling in Power BI_
+
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/31e47324-f5ef-490a-9985-eb3bbd1e2b91)
+
+
 #### Power BI Dashboard
 
 _Here is the screenshot from the Overview Page of Power BI Dashboard_
