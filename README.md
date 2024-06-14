@@ -41,9 +41,9 @@ This section provides a detailed walkthrough of the project implementation, high
        ```dax
        YTD Income = CALCULATE(SUM(Transactions[Transaction Amount]), FILTER(Transactions, Transactions[Type] = "Getting"), DATESYTD(Transactions[Date]))
        ```
-     - **MTD (Month-to-Date) Income:**
+     - **Calculating Year-on-Year % change in cash balance**
        ```dax
-       MTD Income = CALCULATE([Total Income], DATESMTD('Date'[Date]))
+        YOY Cash Δ = DIVIDE([Cash in hand] - [PY Cash], [PY Cash], 0)
        ```
      - **Total Expenses:**
        ```dax
@@ -80,13 +80,7 @@ This section provides a detailed walkthrough of the project implementation, high
         ) 
         * LOOKUPVALUE('USD/PKR'[Close], 'USD/PKR'[Date], MAX(Transactions[Date]))  // Multiply by the USD to PKR exchange rate on the latest date
        ```
-     - **Calculating Total Cash in hand in PKR Terms:**
-       ```dax
-        Cash in hand = [Cum Balance USD in PKR] + [Cum Balance PKR] + [Cum Bal AED in PKR]
-       ```
-     - **Cash Flow Analysis:**
-       Measures for cash inflow and outflow analysis.
-   - Screenshots showcasing DAX formulas used for currency conversion and financial calculations.
+
 
 4. **Dashboard Development**
    - Designed an interactive dashboard in Power BI to visualize financial insights.
