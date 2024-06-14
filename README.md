@@ -118,9 +118,9 @@ Explore the interactive visualizations and insightful dashboards created in Powe
 
 These visualizations and dashboards are designed to provide clear and actionable insights into your financial data, facilitating informed decision-making and enhancing financial well-being.
 
-### Here is the screenshot representing the organization of all the DAX Measures
+### Here is the screenshot representing the organization of all the DAX Measures along with all the tables used
 
-![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/26ef75c5-86e1-47b7-af62-2b81c504280c)
+![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/155561e0-4bd8-4e6b-8be7-f2703a7228c5)
 
 
 ### Screenshots
@@ -137,7 +137,6 @@ _Here is a screenshot from the Google Sheet that has the transactions data_
 _Here is the screenshot from the Overview Page of Power BI Dashboard_
 
 ![image](https://github.com/Zohaib8989/Personal-Finance/assets/148817365/babc27bc-b67b-4dcf-b5ac-759be78d8336)
-
 
 
 
