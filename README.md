@@ -65,7 +65,7 @@ This section provides a detailed walkthrough of the project implementation, high
         ISONORAFTER('Calendar'[Date], MAX('Calendar'[Date]), DESC)
 
        ```
-     - **MTD Expenses:**
+     - **Converting USD Balance into PKR:**
        ```dax
         Cum Balance USD in PKR = 
             // Calculate USD Balance in PKR by applying exchange rate at the latest dateUSD Balance in PKR = 
