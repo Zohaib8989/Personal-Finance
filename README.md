@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this project, I used Google Sheets to store transactional data, linked to Power BI via the web connector. Utilizing Power Query, I cleaned and transformed the data, then modeled it with various date tables. I took daily conversion rates to convert transactions into the home currency (PKR). Using DAX, I created custom KPIs and developed insightful charts and graphs in Power BI to visualize multi-currency transactions. The final dashboard employs the scheduled refresh feature, ensuring users always see the most up-to-date information. This summary is part of the README file in the GitHub repository, showcasing my skills in data integration, modeling, and visualization.
+In this project, I used Google Sheets to store transactional data, linked to Power BI via the web connector. Utilizing Power Query, I cleaned and transformed the data, then modeled it with various date tables. I took daily conversion rates to convert transactions into the home currency (USD). Using DAX, I created custom KPIs and developed insightful charts and graphs in Power BI to visualize multi-currency transactions. The final dashboard employs the scheduled refresh feature, ensuring users always see the most up-to-date information. This summary is part of the README file in the GitHub repository, showcasing my skills in data integration, modeling, and visualization.
 
 ### Problem Statement
 
