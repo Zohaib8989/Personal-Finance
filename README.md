@@ -36,11 +36,7 @@ This section provides a detailed walkthrough of the project implementation, high
 
 3. **Data Modeling and Currency Conversion**
    - Created date tables and implemented DAX formulas for data modeling.
-   - Utilized DAX formulas for:
-     - **Total Income:**
-       ```dax
-       Total Income = SUMX(Transactions, Transactions[Amount] * Transactions[ExchangeRate])
-       ```
+   - Some DAX formulas that I've used:
      - **YTD (Year-to-Date) Income:**
        ```dax
        YTD Income = CALCULATE(SUM(Transactions[Transaction Amount]), FILTER(Transactions, Transactions[Type] = "Getting"), DATESYTD(Transactions[Date]))
